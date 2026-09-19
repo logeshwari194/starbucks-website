@@ -28,7 +28,6 @@ A modern and responsive Starbucks-inspired coffee website built using HTML, CSS,
 coffee-website/
 │
 ├── index.html
-├── iindex.html
 ├── style.css
 ├── script.js
 └── images/
