@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew Haven | Premium Coffee</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f7f4ed;
+            color: #183c2d;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background: rgba(255,255,255,0.96);
+            box-shadow: 0 3px 20px rgba(0,0,0,0.08);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: auto;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 23px;
+            font-weight: 800;
+            color: #006241;
+        }
+
+        .logo span {
+            font-size: 32px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #183c2d;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #00754a;
+        }
+
+        .nav-btn {
+            padding: 12px 22px;
+            border: none;
+            border-radius: 25px;
+            background: #006241;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* ================= HERO ================= */
+
+        .hero {
+            min-height: 100vh;
+            padding: 130px 8% 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+            background:
+                radial-gradient(circle at 90% 20%, #d7eadf, transparent 35%),
+                #f7f4ed;
+        }
+
+        .hero-text {
+            max-width: 570px;
+        }
+
+        .small-title {
+            color: #00754a;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(45px, 6vw, 75px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #00754a;
+        }
+
+        .hero p {
+            font-size: 17px;
+            line-height: 1.8;
+            color: #52645c;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            padding: 15px 28px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .primary-btn {
+            background: #006241;
+            color: white;
+        }
+
+        .secondary-btn {
+            border: 2px solid #006241;
+            color: #006241;
+        }
+
+        /* ================= HERO IMAGE ================= */
+
+        .hero-image {
+            width: 470px;
+            height: 470px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 15px solid white;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes float {
+            0%,100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        /* ================= STATS ================= */
+
+        .stats {
+            display: flex;
+            gap: 45px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat h2 {
+            font-size: 27px;
+            color: #006241;
+        }
+
+        .stat p {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        /* ================= SECTION ================= */
+
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #68766f;
+        }
+
+        /* ================= FEATURES ================= */
+
+        .features {
+            background: white;
+        }
+
+        .feature-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            padding: 35px;
+            border-radius: 20px;
+            background: #f7f4ed;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #65716c;
+            line-height: 1.6;
+        }
+
+        /* ================= MENU ================= */
+
+        .menu-controls {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .filter {
+            border: none;
+            padding: 11px 22px;
+            border-radius: 25px;
+            cursor: pointer;
+            background: white;
+            color: #183c2d;
+            font-weight: 600;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+
+        .filter.active,
+        .filter:hover {
+            background: #006241;
+            color: white;
+        }
+
+        .menu-grid {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 28px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 22px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-img {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .card:hover img {
+            transform: scale(1.08);
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #6c766f;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .card-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .price {
+            font-size: 21px;
+            font-weight: 800;
+            color: #006241;
+        }
+
+        .add-btn {
+            border: none;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #006241;
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        /* ================= ABOUT ================= */
+
+        .about {
+            background: #183c2d;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .about-image {
+            flex: 1;
+            height: 430px;
+            border-radius: 25px;
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content {
+            flex: 1;
+        }
+
+        .about-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            color: #d8e2dc;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        /* ================= REWARDS ================= */
+
+        .rewards {
+            text-align: center;
+            background: #e8f1eb;
+        }
+
+        .reward-box {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 50px;
+            border-radius: 25px;
+            box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+        }
+
+        .stars {
+            font-size: 35px;
+            margin: 20px 0;
+        }
+
+        .reward-box button {
+            padding: 14px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #006241;
+            color: white;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #102c21;
+            color: white;
+            padding: 50px 8% 25px;
+        }
+
+        .footer-grid {
+            max-width: 1100px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer a {
+            color: #b8c7bf;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+
+        .copyright {
+            text-align: center;
+            border-top: 1px solid #345045;
+            margin-top: 35px;
+            padding-top: 20px;
+            color: #aebbb4;
+        }
+
+        /* ================= TOAST ================= */
+
+        #toast {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            background: #006241;
+            color: white;
+            padding: 15px 22px;
+            border-radius: 10px;
+            transform: translateY(100px);
+            transition: 0.4s;
+            z-index: 2000;
+        }
+
+        #toast.show {
+            transform: translateY(0);
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media(max-width:900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 120px;
+            }
+
+            .hero-buttons,
+            .stats {
+                justify-content: center;
+            }
+
+            .hero-image {
+                width: 360px;
+                height: 360px;
+            }
+
+            .feature-grid,
+            .menu-grid {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .about {
+                flex-direction: column;
+            }
+
+            .about-image {
+                width: 100%;
+            }
+
+        }
+
+        @media(max-width:600px) {
+
+            .hero-image {
+                width: 280px;
+                height: 280px;
+            }
+
+            .feature-grid,
+            .menu-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 65px 5%;
+            }
+
+            .section-title h2,
+            .about-content h2 {
+                font-size: 35px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+    <nav>
+
+        <div class="logo">
+            <span>☕</span>
+            BREW HAVEN
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#rewards">Rewards</a></li>
+        </ul>
+
+        <button class="nav-btn" onclick="orderNow()">
+            Order Now
+        </button>
+
+    </nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <div class="small-title">
+            PREMIUM COFFEE EXPERIENCE
+        </div>
+
+        <h1>
+            Start Your Day<br>
+            With <span>Great Coffee.</span>
+        </h1>
+
+        <p>
+            Discover handcrafted coffee made from premium beans,
+            fresh ingredients and a passion for every cup.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#menu" class="primary-btn">
+                Explore Menu ☕
+            </a>
+
+            <a href="#about" class="secondary-btn">
+                Discover More
+            </a>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h2>25+</h2>
+                <p>Coffee Varieties</p>
+            </div>
+
+            <div class="stat">
+                <h2>10K+</h2>
+                <p>Happy Customers</p>
+            </div>
+
+            <div class="stat">
+                <h2>4.9★</h2>
+                <p>Customer Rating</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=85"
+        alt="Premium Coffee">
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="section-title">
+
+        <h2>Why Choose Us?</h2>
+
+        <p>
+            More than coffee — it's an experience.
+        </p>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature">
+
+            <div class="feature-icon">🌱</div>
+
+            <h3>Premium Beans</h3>
+
+            <p>
+                Carefully selected coffee beans
+                sourced from quality farms.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">☕</div>
+
+            <h3>Handcrafted</h3>
+
+            <p>
+                Every cup is prepared with
+                care by skilled baristas.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">🚀</div>
+
+            <h3>Fast Service</h3>
+
+            <p>
+                Fresh coffee delivered quickly
+                whenever you need it.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section id="menu">
+
+    <div class="section-title">
+
+        <h2>Our Popular Menu</h2>
+
+        <p>
+            Find your perfect cup.
+        </p>
+
+    </div>
+
+
+    <div class="menu-controls">
+
+        <button class="filter active" onclick="filterMenu('all',this)">
+            All
+        </button>
+
+        <button class="filter" onclick="filterMenu('hot',this)">
+            Hot Coffee
+        </button>
+
+        <button class="filter" onclick="filterMenu('cold',this)">
+            Cold Coffee
+        </button>
+
+        <button class="filter" onclick="filterMenu('food',this)">
+            Food
+        </button>
+
+    </div>
+
+
+    <div class="menu-grid">
+
+
+        <!-- CARD 1 -->
+
+        <div class="card" data-category="hot">
+
+            <div class="card-img">
+
+                <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=85"
+                alt="Latte">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Caramel Latte</h3>
+
+                <p>
+                    Smooth espresso with steamed milk
+                    and delicious caramel.
+                </p>
+
+                <div class="card-bottom">
+
+                    <div class="price">₹249</div>
+
+                    <button class="add-btn"
+                    onclick="addCart('Caramel Latte')">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="card" data-category="hot">
+
+            <div class="card-img">
+
+                <img
+                src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=800&q=85"
+                alt="Coffee">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Classic Cappuccino</h3>
+
+                <p>
+                    Rich espresso with creamy
+                    milk foam.
+                </p>
+
+                <div class="card-bottom">
+
+                    <div class="price">₹229</div>
+
+                    <button class="add-btn"
+                    onclick="addCart('Classic Cappuccino')">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="card" data-category="cold">
+
+            <div class="card-img">
+
+                <img
+                src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=800&q=85"
+                alt="Iced Coffee">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Iced Coffee</h3>
+
+                <p>
+                    Chilled coffee with ice and
+                    creamy milk.
+                </p>
+
+                <div class="card-bottom">
+
+                    <div class="price">₹279</div>
+
+                    <button class="add-btn"
+                    onclick="addCart('Iced Coffee')">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 4 -->
+
+        <div class="card" data-category="cold">
+
+            <div class="card-img">
+
+                <img
+                src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=800&q=85"
+                alt="Frappuccino">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Mocha Frappe</h3>
+
+                <p>
+                    Chocolate, coffee and ice
+                    blended perfectly.
+                </p>
+
+                <div class="card-bottom">
+
+                    <div class="price">₹329</div>
+
+                    <button class="add-btn"
+                    onclick="addCart('Mocha Frappe')">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 5 -->
+
+        <div class="card" data-category="food">
+
+            <div class="card-img">
+
+                <img
+                src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=85"
+                alt="Croissant">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Butter Croissant</h3>
+
+                <p>
+                    Crispy outside and soft,
+                    buttery inside.
+                </p>
+
+                <div class="card-bottom">
+
+                    <div class="price">₹179</div>
+
+                    <button class="add-btn"
+                    onclick="addCart('Butter Croissant')">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- CARD 6 -->
+
+        <div class="card" data-category="food">
+
+            <div class="card-img">
+
+                <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=85"
+                alt="Chocolate Cake">
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Chocolate Cake</h3>
+
+                <p>
+                    Rich chocolate cake for
+                    the perfect coffee pairing.
+                </p>
+
+                <div class="card-bottom">
+
+                    <div class="price">₹249</div>
+
+                    <button class="add-btn"
+                    onclick="addCart('Chocolate Cake')">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+    <div class="about-image">
+
+        <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85"
+        alt="Coffee Shop">
+
+    </div>
+
+
+    <div class="about-content">
+
+        <h2>
+            Crafted With Passion
+        </h2>
+
+        <p>
+            At Brew Haven, we believe every cup of coffee
+            should create a memorable experience.
+            Our beans are carefully selected and every drink
+            is handcrafted to deliver rich flavour and aroma.
+        </p>
+
+        <a href="#menu" class="primary-btn">
+            Explore Our Menu
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REWARDS ================= -->
+
+<section class="rewards" id="rewards">
+
+    <div class="reward-box">
+
+        <h2>Join Brew Rewards ⭐</h2>
+
+        <p>
+            Earn points every time you order
+            and unlock exciting rewards.
+        </p>
+
+        <div class="stars">
+            ⭐ ⭐ ⭐ ⭐ ⭐
+        </div>
+
+        <button onclick="joinRewards()">
+            Join Now
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>☕ BREW HAVEN</h3>
+
+            <p>
+                Premium coffee. Fresh moments.
+                Great experiences.
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <p>
+                <a href="#home">Home</a><br>
+                <a href="#menu">Menu</a><br>
+                <a href="#about">About</a>
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>
+                📍 Salem, Tamil Nadu<br>
+                📞 +91 98765 43210<br>
+                ✉ hello@brewhaven.com
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Brew Haven. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST -->
+
+<div id="toast">
+    Added to your order ☕
+</div>
+
+
+<script>
+
+    /* ================= FILTER ================= */
+
+    function filterMenu(category, button) {
+
+        const cards = document.querySelectorAll(".card");
+
+        const buttons = document.querySelectorAll(".filter");
+
+        buttons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        cards.forEach(card => {
+
+            if(category === "all" ||
+               card.dataset.category === category) {
+
+                card.style.display = "block";
+
+            } else {
+
+                card.style.display = "none";
+
+            }
+
+        });
+
+    }
+
+
+    /* ================= CART ================= */
+
+    function addCart(item) {
+
+        const toast = document.getElementById("toast");
+
+        toast.innerHTML =
+            "✓ " + item + " added to your order ☕";
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+
+            toast.classList.remove("show");
+
+        }, 2500);
+
+    }
+
+
+    /* ================= ORDER ================= */
+
+    function orderNow() {
+
+        document
+        .getElementById("menu")
+        .scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+
+    /* ================= REWARDS ================= */
+
+    function joinRewards() {
+
+        const toast = document.getElementById("toast");
+
+        toast.innerHTML =
+            "🎉 Welcome to Brew Rewards!";
+
+        toast.classList.add("show");
+
+        setTimeout(() => {
+
+            toast.classList.remove("show");
+
+        }, 2500);
+
+    }
+
+</script>
+
+</body>
+</html>

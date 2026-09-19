@@ -1,0 +1,1905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Starbucks Coffee | Premium Coffee Experience</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= PRELOADER ================= -->
+
+    <div id="preloader">
+       <a href="#" class="logo">
+      <!-- Starbucks Official SVG Logo -->
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg" alt="Starbucks Logo" />
+      <span>STARBUCKS</span>
+        <h2>STARBUCKS</h2>
+        <p>Brewing your experience...</p>
+    </div>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="header">
+
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+
+                <div class="logo-circle">
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/en/d/d3/Starbucks_Corporation_Logo_2011.svg"
+                        alt="Starbucks Logo">
+                </div>
+                <div>
+                    <span>STARBUCKS</span>
+                    <small>COFFEE EXPERIENCE</small>
+                </div>
+
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+
+                <li>
+                    <a href="#offers">Offers</a>
+                </li>
+
+                <li>
+                    <a href="#rewards">Rewards</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <!-- Dark Mode -->
+
+                <button
+                    class="icon-btn"
+                    id="themeBtn"
+                    title="Dark Mode">
+
+                    <i class="fa-solid fa-moon"></i>
+
+                </button>
+
+
+                <!-- Search -->
+
+                <button
+                    class="icon-btn"
+                    onclick="focusSearch()"
+                    title="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+
+                <!-- Cart -->
+
+                <button
+                    class="cart-button"
+                    onclick="openCart()">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span id="cartCount">
+                        0
+                    </span>
+
+                </button>
+
+
+                <button
+                    class="order-nav-btn"
+                    onclick="scrollToMenu()">
+
+                    Order Now
+
+                </button>
+
+
+                <!-- Mobile -->
+
+                <button
+                    class="mobile-menu-btn"
+                    onclick="toggleMobileMenu()">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+
+        <!-- MOBILE NAV -->
+
+        <div id="mobileNav">
+
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#offers">Offers</a>
+            <a href="#rewards">Rewards</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content reveal">
+
+                <span class="eyebrow">
+                    PREMIUM COFFEE EXPERIENCE
+                </span>
+
+
+                <h1>
+                    It's a great day
+                    <br>
+                    <span>for coffee.</span>
+                </h1>
+
+
+                <p>
+                    Start your day with handcrafted coffee,
+                    premium beans and unforgettable flavours
+                    made especially for you.
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="scrollToMenu()">
+
+                        Explore Menu
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <a
+                        href="#about"
+                        class="outline-btn">
+
+                        Our Story
+
+                    </a>
+
+                </div>
+
+
+                <!-- HERO STATS -->
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong
+                            data-target="25">
+                            0
+                        </strong>
+
+                        <span>+</span>
+
+                        <p>Coffee Varieties</p>
+                    </div>
+
+
+                    <div>
+                        <strong
+                            data-target="10">
+                            0
+                        </strong>
+
+                        <span>K+</span>
+
+                        <p>Happy Customers</p>
+                    </div>
+
+
+                    <div>
+                        <strong
+                            data-target="49">
+                            0
+                        </strong>
+
+                        <span>★</span>
+
+                        <p>Average Rating</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- HERO IMAGE -->
+
+            <div class="hero-visual reveal">
+
+                <div class="hero-circle">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1000&q=90"
+                        alt="Premium Coffee">
+
+                </div>
+
+
+                <div class="coffee-bean bean-one">
+                    ☕
+                </div>
+
+                <div class="coffee-bean bean-two">
+                    ✦
+                </div>
+
+
+                <!-- Floating card -->
+
+                <div class="favorite-card">
+
+                    <div class="favorite-icon">
+                        ⭐
+                    </div>
+
+                    <div>
+
+                        <small>
+                            CUSTOMER FAVORITE
+                        </small>
+
+                        <strong>
+                            Caramel Macchiato
+                        </strong>
+
+                        <div class="mini-rating">
+                            ★★★★★
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="features-section">
+
+            <div class="feature-grid">
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-seedling"></i>
+                    </div>
+
+                    <div>
+                        <h3>Premium Beans</h3>
+
+                        <p>
+                            Carefully selected coffee beans
+                            from quality farms.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Handcrafted</h3>
+
+                        <p>
+                            Every drink is prepared with
+                            care by skilled baristas.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+
+                    <div>
+                        <h3>Fast Service</h3>
+
+                        <p>
+                            Fresh coffee served quickly
+                            whenever you need it.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-card reveal">
+
+                    <div class="feature-icon">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <div>
+                        <h3>Made With Love</h3>
+
+                        <p>
+                            Great coffee created for
+                            memorable moments.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= MENU ================= -->
+
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    OUR MENU
+                </span>
+
+                <h2>
+                    Find Your Perfect Cup
+                </h2>
+
+                <p>
+                    Explore our handcrafted drinks
+                    and delicious food.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="search-container reveal">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search coffee, food or dessert..."
+                    oninput="searchProducts()">
+
+                <button
+                    onclick="clearSearch()"
+                    id="clearSearch">
+
+                    <i class="fa-solid fa-xmark"></i>
+
+                </button>
+
+            </div>
+
+
+            <!-- FILTERS -->
+
+            <div class="category-buttons reveal">
+
+                <button
+                    class="category active"
+                    data-category="all"
+                    onclick="filterProducts('all', this)">
+
+                    <i class="fa-solid fa-border-all"></i>
+                    All
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="hot"
+                    onclick="filterProducts('hot', this)">
+
+                    ☕ Hot Coffee
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="cold"
+                    onclick="filterProducts('cold', this)">
+
+                    🧊 Cold Coffee
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="food"
+                    onclick="filterProducts('food', this)">
+
+                    🥐 Bakery
+
+                </button>
+
+
+                <button
+                    class="category"
+                    data-category="dessert"
+                    onclick="filterProducts('dessert', this)">
+
+                    🍰 Desserts
+
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTS -->
+
+            <div class="products-grid" id="productsGrid">
+
+
+                <!-- 1 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="hot"
+                    data-name="Caramel Macchiato">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=90"
+                            alt="Caramel Macchiato">
+
+                        <span class="product-tag">
+                            POPULAR
+                        </span>
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <h3>Caramel Macchiato</h3>
+
+                        <p>
+                            Rich espresso, steamed milk
+                            and buttery caramel.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹299
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Caramel Macchiato',299)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 2 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="hot"
+                    data-name="Caffe Latte">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=900&q=90"
+                            alt="Caffe Latte">
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.8</span>
+                        </div>
+
+                        <h3>Caffe Latte</h3>
+
+                        <p>
+                            Smooth espresso with creamy
+                            steamed milk.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹249
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Caffe Latte',249)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 3 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="cold"
+                    data-name="Cold Coffee">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=900&q=90"
+                            alt="Cold Coffee">
+
+
+                        <span class="product-tag cold-tag">
+                            NEW
+                        </span>
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.7</span>
+                        </div>
+
+                        <h3>Cold Coffee</h3>
+
+                        <p>
+                            Chilled coffee blended with
+                            creamy milk and ice.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹279
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Cold Coffee',279)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 4 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="cold"
+                    data-name="Mocha Frappuccino">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=900&q=90"
+                            alt="Mocha Frappuccino">
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <h3>Mocha Frappuccino</h3>
+
+                        <p>
+                            Chocolate, coffee and ice
+                            blended together.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹329
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Mocha Frappuccino',329)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 5 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="food"
+                    data-name="Butter Croissant">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=90"
+                            alt="Butter Croissant">
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.8</span>
+                        </div>
+
+                        <h3>Butter Croissant</h3>
+
+                        <p>
+                            Crispy outside and soft,
+                            buttery inside.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹179
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Butter Croissant',179)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 6 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="dessert"
+                    data-name="Chocolate Cake">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=90"
+                            alt="Chocolate Cake">
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <h3>Chocolate Cake</h3>
+
+                        <p>
+                            Rich chocolate cake with
+                            a smooth creamy finish.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹249
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Chocolate Cake',249)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 7 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="hot"
+                    data-name="Americano">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=900&q=90"
+                            alt="Americano">
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.7</span>
+                        </div>
+
+                        <h3>Classic Americano</h3>
+
+                        <p>
+                            Bold espresso with hot water
+                            for a rich finish.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹199
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Classic Americano',199)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- 8 -->
+
+                <article
+                    class="product-card reveal"
+                    data-category="cold"
+                    data-name="Iced Caramel Latte">
+
+                    <div class="product-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1461988091159-192b6df7054f?auto=format&fit=crop&w=900&q=90"
+                            alt="Iced Caramel Latte">
+
+
+                        <span class="product-tag">
+                            BEST SELLER
+                        </span>
+
+
+                        <button
+                            class="favorite-btn"
+                            onclick="toggleFavorite(this)">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="product-content">
+
+                        <div class="rating">
+                            ★★★★★
+                            <span>4.9</span>
+                        </div>
+
+                        <h3>Iced Caramel Latte</h3>
+
+                        <p>
+                            Cold espresso with milk,
+                            ice and caramel.
+                        </p>
+
+
+                        <div class="product-bottom">
+
+                            <strong>
+                                ₹289
+                            </strong>
+
+                            <button
+                                onclick="addToCart('Iced Caramel Latte',289)">
+
+                                <i class="fa-solid fa-plus"></i>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div
+                class="no-results"
+                id="noResults">
+
+                <i class="fa-solid fa-mug-hot"></i>
+
+                <h3>No coffee found</h3>
+
+                <p>
+                    Try searching for another drink.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= OFFERS ================= -->
+
+        <section class="offers-section" id="offers">
+
+            <div class="section-heading light reveal">
+
+                <span class="eyebrow">
+                    SPECIAL OFFERS
+                </span>
+
+                <h2>
+                    Something Special For You
+                </h2>
+
+            </div>
+
+
+            <div class="offers-grid">
+
+
+                <div class="offer-card reveal">
+
+                    <div class="offer-text">
+
+                        <span>
+                            WEEKEND SPECIAL
+                        </span>
+
+                        <h3>
+                            Buy 2 Coffee,
+                            <br>
+                            Get 1 Free
+                        </h3>
+
+                        <p>
+                            Available every Saturday
+                            and Sunday.
+                        </p>
+
+                        <button
+                            onclick="claimOffer('Weekend Coffee Offer')">
+
+                            Claim Offer
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="offer-icon">
+                        ☕
+                    </div>
+
+                </div>
+
+
+
+                <div class="offer-card second-offer reveal">
+
+                    <div class="offer-text">
+
+                        <span>
+                            MORNING DEAL
+                        </span>
+
+                        <h3>
+                            20% Off
+                            <br>
+                            Before 11 AM
+                        </h3>
+
+                        <p>
+                            Start your morning
+                            with something delicious.
+                        </p>
+
+                        <button
+                            onclick="claimOffer('Morning Deal')">
+
+                            Claim Offer
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="offer-icon">
+                        🌅
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= REWARDS ================= -->
+
+        <section class="rewards-section" id="rewards">
+
+            <div class="rewards-container reveal">
+
+                <div class="rewards-content">
+
+                    <span class="eyebrow">
+                        STAR REWARDS
+                    </span>
+
+                    <h2>
+                        Earn Stars.
+                        <br>
+                        Get Rewards.
+                    </h2>
+
+                    <p>
+                        Join our rewards program and earn
+                        stars every time you order.
+                    </p>
+
+
+                    <div class="reward-steps">
+
+                        <div>
+                            <strong>01</strong>
+                            <span>Order Coffee</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Earn Stars</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Unlock Rewards</span>
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="primary-btn"
+                        onclick="joinRewards()">
+
+                        Join Rewards
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="reward-card">
+
+                    <div class="reward-card-top">
+
+                        <span>
+                            ★ STAR REWARDS
+                        </span>
+
+                        <i class="fa-solid fa-crown"></i>
+
+                    </div>
+
+
+                    <div class="reward-number">
+                        245
+                    </div>
+
+                    <p>
+                        Stars collected
+                    </p>
+
+
+                    <div class="progress-bar">
+
+                        <div
+                            class="progress"
+                            style="width:82%">
+                        </div>
+
+                    </div>
+
+
+                    <div class="reward-progress">
+
+                        <span>
+                            245 Stars
+                        </span>
+
+                        <span>
+                            300 Stars
+                        </span>
+
+                    </div>
+
+
+                    <div class="reward-gift">
+                        🎁 Free Coffee Reward
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-image reveal">
+
+                <img
+                    src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=90"
+                    alt="Coffee Shop">
+
+                <div class="experience-badge">
+
+                    <strong>
+                        15+
+                    </strong>
+
+                    <span>
+                        Years of<br>
+                        Coffee Passion
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-content reveal">
+
+                <span class="eyebrow">
+                    OUR STORY
+                </span>
+
+                <h2>
+                    Crafted With
+                    <span>Passion.</span>
+                </h2>
+
+                <p>
+                    We believe coffee is more than a drink.
+                    It is a moment, a conversation, a memory
+                    and a reason to slow down.
+                </p>
+
+                <p>
+                    From carefully selected beans to
+                    handcrafted drinks, every cup is created
+                    to give you a better coffee experience.
+                </p>
+
+
+                <div class="about-points">
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        Premium quality beans
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        Skilled coffee makers
+                    </div>
+
+                    <div>
+                        <i class="fa-solid fa-check"></i>
+                        Fresh ingredients
+                    </div>
+
+                </div>
+
+
+                <button
+                    class="primary-btn"
+                    onclick="showToast('Welcome to our coffee story ☕')">
+
+                    Discover More
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= REVIEWS ================= -->
+
+        <section class="reviews-section">
+
+            <div class="section-heading reveal">
+
+                <span class="eyebrow">
+                    CUSTOMER LOVE
+                </span>
+
+                <h2>
+                    What Our Customers Say
+                </h2>
+
+            </div>
+
+
+            <div class="reviews-grid">
+
+
+                <div class="review-card reveal">
+
+                    <div class="quote">
+                        “
+                    </div>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        The coffee was amazing and the
+                        whole experience felt premium.
+                    </p>
+
+                    <div class="review-user">
+
+                        <div class="avatar">
+                            A
+                        </div>
+
+                        <div>
+                            <strong>
+                                Ananya
+                            </strong>
+
+                            <span>
+                                Regular Customer
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="review-card reveal">
+
+                    <div class="quote">
+                        “
+                    </div>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        I absolutely love the caramel
+                        macchiato. My favourite!
+                    </p>
+
+                    <div class="review-user">
+
+                        <div class="avatar">
+                            R
+                        </div>
+
+                        <div>
+                            <strong>
+                                Rahul
+                            </strong>
+
+                            <span>
+                                Coffee Lover
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="review-card reveal">
+
+                    <div class="quote">
+                        “
+                    </div>
+
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+
+                    <p>
+                        Great coffee, beautiful atmosphere
+                        and excellent service.
+                    </p>
+
+                    <div class="review-user">
+
+                        <div class="avatar">
+                            P
+                        </div>
+
+                        <div>
+                            <strong>
+                                Priya
+                            </strong>
+
+                            <span>
+                                Happy Customer
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= STORE LOCATOR ================= -->
+
+        <section class="locator-section">
+
+            <div class="locator-container reveal">
+
+                <div>
+
+                    <span class="eyebrow">
+                        FIND A STORE
+                    </span>
+
+                    <h2>
+                        Find Your Nearest
+                        <span>Coffee</span>
+                    </h2>
+
+                    <p>
+                        Discover a coffee shop near you
+                        and enjoy your favourite drink.
+                    </p>
+
+
+                    <div class="location-search">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <input
+                            type="text"
+                            id="locationInput"
+                            placeholder="Enter your city">
+
+                        <button
+                            onclick="findStore()">
+
+                            Find Store
+
+                        </button>
+
+                    </div>
+
+                    <div id="locationResult"></div>
+
+                </div>
+
+
+                <div class="map-card">
+
+                    <div class="map-pin">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="map-circle">
+                        <span>📍</span>
+                    </div>
+
+                    <p>
+                        Coffee shops near you
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer id="contact">
+
+        <div class="footer-main">
+
+
+            <!-- BRAND -->
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+
+                    <div class="footer-logo-icon">
+                        ☕
+                    </div>
+
+                    <div>
+                        <strong>
+                            STARBUCKS
+                        </strong>
+
+                        <small>
+                            COFFEE EXPERIENCE
+                        </small>
+                    </div>
+
+                </div>
+
+
+                <p>
+                    Great coffee brings people together.
+                    Enjoy every moment, one cup at a time.
+                </p>
+
+
+                <!-- SOCIAL -->
+
+                <div class="social-icons">
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                        onclick="socialClick('Instagram')">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                        onclick="socialClick('YouTube')">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                        onclick="socialClick('Twitter')">
+
+                        <i class="fa-brands fa-x-twitter"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                        onclick="socialClick('Facebook')">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- COMPANY -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <a href="#about">
+                    About Us
+                </a>
+
+                <a href="#">
+                    Our Coffee
+                </a>
+
+                <a href="#">
+                    Careers
+                </a>
+
+                <a href="#">
+                    Sustainability
+                </a>
+
+            </div>
+
+
+
+            <!-- SUPPORT -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="#">
+                    Contact Us
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+            </div>
+
+
+
+            <!-- APP -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Get The App
+                </h3>
+
+                <p>
+                    Order coffee faster with
+                    our mobile experience.
+                </p>
+
+                <button
+                    class="app-btn"
+                    onclick="showToast('App download coming soon 📱')">
+
+                    <i class="fa-brands fa-google-play"></i>
+
+                    Get the App
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Starbucks Coffee Experience
+            </span>
+
+            <span>
+                Crafted with ☕ & ❤️
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= CART OVERLAY ================= -->
+
+    <div
+        id="cartOverlay"
+        onclick="closeCart()">
+    </div>
+
+
+
+    <!-- ================= CART DRAWER ================= -->
+
+    <aside id="cartDrawer">
+
+        <div class="cart-header">
+
+            <div>
+
+                <span>
+                    YOUR ORDER
+                </span>
+
+                <h2>
+                    Shopping Bag
+                </h2>
+
+            </div>
+
+
+            <button
+                class="close-cart"
+                onclick="closeCart()">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <div id="cartItems">
+
+            <div class="empty-cart">
+
+                <div class="empty-cart-icon">
+                    ☕
+                </div>
+
+                <h3>
+                    Your bag is empty
+                </h3>
+
+                <p>
+                    Add your favourite coffee
+                    to get started.
+                </p>
+
+                <button
+                    onclick="closeCart();scrollToMenu()">
+
+                    Explore Menu
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="delivery-note">
+
+                <i class="fa-solid fa-truck"></i>
+
+                <span>
+                    Free delivery on orders above ₹499
+                </span>
+
+            </div>
+
+
+            <div class="subtotal-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong id="cartTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="checkout-btn"
+                onclick="checkout()">
+
+                Checkout
+
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+        </div>
+
+    </aside>
+
+
+
+    <!-- ================= CHECKOUT MODAL ================= -->
+
+    <div id="checkoutModal">
+
+        <div class="modal-box">
+
+            <button
+                class="modal-close"
+                onclick="closeCheckout()">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <h2>
+                Order Ready!
+            </h2>
+
+            <p>
+                Your coffee order has been placed
+                successfully.
+            </p>
+
+
+            <div class="order-summary">
+
+                <span>
+                    Order Total
+                </span>
+
+                <strong id="modalTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+
+            <button
+                class="primary-btn"
+                onclick="finishOrder()">
+
+                Continue
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div id="toast">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        <span>
+            Added to cart
+        </span>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
